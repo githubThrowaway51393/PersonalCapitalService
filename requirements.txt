@@ -1,0 +1,8 @@
+Flask==0.12.2
+personalcapital
+requests
+cryptography
+python-dateutil
+multipledispatch
+apscheduler
+flask-basicauth
