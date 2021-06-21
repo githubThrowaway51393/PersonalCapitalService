@@ -1,6 +1,6 @@
 # PersonalCapitalService
 
-This is an extension of the great work that Haicho did in this repo. https://github.com/haochi/personalcapital
+This is an extension of the great work that Haochi did in this repo. https://github.com/haochi/personalcapital
 
 Personal Capital's API setup allows you to authenticate with its backend services and make requests to it pretty easily. This is merely a wrapper API to make capturing your data in a more friendly manner.
 
