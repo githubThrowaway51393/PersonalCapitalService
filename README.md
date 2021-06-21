@@ -41,7 +41,7 @@ Then enter in the text you want to encrypt. Add the encrypted forms of your cred
 
 ### First execution
 
-Upon first execution, the script will ask you for a code. This is the Two Factor Auth you've likely set up with Personal Capital. Enter the code here and the script will generate a `session.json` file which is perserved across executions. The API will load this session instead of asking for a new one so  you don't need to authenticate everytime.
+Upon first execution, the script will ask you for a code. This is the Two Factor Auth you've likely set up with Personal Capital. Enter the code here and the script will generate a `session.json` file which is preserved across executions. The API will load this session instead of asking for a new one so  you don't need to authenticate everytime.
 
 ### Running as a docker
 
