@@ -2,7 +2,7 @@
 
 This is an extension of the great work that Haochi did in this repo. https://github.com/haochi/personalcapital
 
-Personal Capital's API setup allows you to authenticate with its backend services and make requests to it pretty easily. This is merely a wrapper API to make capturing your data in a more friendly manner.
+Personal Capital's API setup allows you to authenticate with its backend services and make requests to it pretty easily. This is merely a wrapper API to allow capturing your data in a more friendly manner.
 
 For example, I use it in combination with some Java code to track my spending, investments, and passive income in an Excel sheet every month.
 
