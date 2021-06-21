@@ -60,7 +60,7 @@ It does a few unnecessary things, but you can modify it to fit your needs.
 
 ### Troubleshooting
 
-Sometimes the Personal Capital API just like.. doesn't work? You'll notice some random execeptions being thrown about being unable to parse a dictionary. Usually it's about spData, a json object Personal Capital uses frequently in their responses. To get around this, I set up the service to refresh the session every 10 minutes or so.
+Sometimes the Personal Capital API just like.. doesn't work? You'll notice some random exceptions being thrown about being unable to parse a dictionary. Usually it's about spData, a json object Personal Capital uses frequently in their responses. To get around this, I set up the service to refresh the session every 10 minutes or so.
 
 This isn't perfect, so in my implementation I set up a Health Check in my Jenkins environment to refresh it when it sees a failure.
 
