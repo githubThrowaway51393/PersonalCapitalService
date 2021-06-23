@@ -74,7 +74,7 @@ Here are a few examples:
 
 `/` : Hello World Endpoint. I had this to check whether or not the service is actually up. You could probably get rid of this.
 
-`/accounts` : Returns a list of the accounts linked to your Personal Capital Account
+`/accounts` : Returns a list of the financial accounts that you've linked to your Personal Capital Account
 
 `/trans/{numDays}` : Returns a list of transactions going back *numDays* days
 
@@ -85,6 +85,16 @@ Here are a few examples:
 **Format should be yyyy-mm-dd**.
 
     Example: `/trans/2020-01-01/2020-12-31/`
+    
+`/trans/{accountName}/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates for the given linked *accountName* account. 
+
+**Format should be yyyy-mm-dd**.
+
+    Example: `/trans/Investment Account 1234/2020-01-01/2020-12-31/`
+
+`/trans/all/lastmonth` : Returns a list of transactions in the previous month. 
+
+
 
 ### Troubleshooting
 
