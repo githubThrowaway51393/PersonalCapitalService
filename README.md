@@ -78,7 +78,8 @@ Here are a few examples:
 
 `/trans/{numDays}` : Returns a list of transactions going back *numDays* days
 
-    Example: /trans/30
+Example: 
+    /trans/30
 
 `/trans/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates. 
 
