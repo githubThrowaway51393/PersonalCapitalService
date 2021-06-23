@@ -80,7 +80,8 @@ Here are a few examples:
 
     Example: `/trans/30`
 
-`/trans/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates. **Format should be yyyy-mm-dd**.
+`/trans/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates. 
+**Format should be yyyy-mm-dd**.
 
     Example: `/trans/2020-01-01/2020-12-31/`
 
