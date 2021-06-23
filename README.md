@@ -41,6 +41,12 @@ Then enter in the text you want to encrypt. Add the encrypted forms of your cred
 
 ### First execution
 
+In order to start the service simply run:
+
+```shell
+py pers-cap-svc.py
+```
+
 Upon first execution, the script will ask you for a code. This is the Two Factor Auth you've likely set up with Personal Capital. Enter the code here and the script will generate a `session.json` file which is preserved across executions. The API will load this session instead of asking for a new one so  you don't need to authenticate everytime.
 
 ### Running as a docker
@@ -56,7 +62,27 @@ docker container prune -f || true
 docker run --publish DESIREDHOSTPORT:DESIREDDOCKERPORT --detach --name pers-cap-cntnr pers-cap-svc
 ```
 
-It does a few unnecessary things, but you can modify it to fit your needs.
+The above may do a few unnecessary things from your point og view so you can modify it to fit your needs.
+
+### Available Endpoints
+
+There are a bunch of different endpoints available which you can see by reading `pers-cap-svc.py`
+
+All endpoints are GET Requests, so no inputs from a POST Body are required. 
+
+Here are a few examples:
+
+`/` : Hello World Endpoint. I had this to check whether or not the service is actually up. You could probably get rid of this.
+
+`/accounts` : Returns a list of the accounts linked to your Personal Capital Account
+
+`/trans/{numDays}` : Returns a list of transactions going back *numDays* days
+
+    Example: `/trans/30`
+
+`/trans/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates. **Format should be yyyy-mm-dd**.
+
+    Example: `/trans/2020-01-01/2020-12-31/`
 
 ### Troubleshooting
 
