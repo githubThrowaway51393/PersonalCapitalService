@@ -79,19 +79,24 @@ Here are a few examples:
 `/trans/{numDays}` : Returns a list of transactions going back *numDays* days
 
 Example: 
+    
     /trans/30
 
 `/trans/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates. 
 
 **Format should be yyyy-mm-dd**.
 
-    Example: /trans/2020-01-01/2020-12-31/
+Example: 
+    
+    /trans/2020-01-01/2020-12-31/
     
 `/trans/{accountName}/{start}/{end}` : Returns a list of transactions between the *start* and *end* dates for the given linked *accountName* account. 
 
 **Format should be yyyy-mm-dd**.
 
-    Example: /trans/Investment Account 1234/2020-01-01/2020-12-31/
+Example: 
+    
+    /trans/Investment Account 1234/2020-01-01/2020-12-31/
 
 `/trans/all/lastmonth` : Returns a list of transactions in the previous month. 
 
